@@ -8,12 +8,12 @@
 
 The provider contains the rules to allow cookie creations.
 
-
 ```php
 <?php
 
 interface CookieLawProvider {
-    public function isAllowed(ParameterBag $cookies);
+    public function isAllowed(\Symfony\Component\HttpFoundation\ParameterBag $cookies): Boolean;
+    public function getCookieName(): String;
 }
 ```
 

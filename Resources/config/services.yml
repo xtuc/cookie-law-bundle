@@ -1,11 +1,10 @@
 services:
-    test:
-        class: Xtuc\CookieLawBundle\Services\TestService
+    cookie_bar.provider:
+        class: Xtuc\CookieLawBundle\Services\CookieBarProvider
 
-    cookielaw:
-        class: Xtuc\CookieLawBundle\Services\CookieLawService
+    cookielaw.listener:
+        class: Xtuc\CookieLawBundle\Services\CookieLawListener
         arguments:
-            - @test
-            - @request_stack
+            - @cookie_bar.provider
         tags:
             - { name: kernel.event_listener, event: kernel.response }
