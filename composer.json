@@ -1,0 +1,13 @@
+{
+    "name": "xtuc/cookie-law-bundle",
+    "description": "EU Cookie law bundle for Symfony2",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sven SAULEAU",
+            "email": "sven.sauleau@xtuc.fr"
+        }
+    ],
+    "require": {}
+}
