@@ -1,6 +1,6 @@
 # Cookie law bundle
 
-This is a proof of concept. In my case Symfony2 (FOSUserBundle precisly) sends session cookies without any control which is not allowed according the EU Cookie law.
+This is a proof of concept. Symfony2 sends cookies by default, which is not allowed in the EU Cookie law.
 
 ## Known issues
 
@@ -8,7 +8,7 @@ This is a proof of concept. In my case Symfony2 (FOSUserBundle precisly) sends s
 
 ## Provider
 
-The provider contains the rules to allowing cookie creation.
+The provider contains the rules to allow cookie creation.
 
 ```php
 <?php
@@ -19,4 +19,4 @@ interface CookieLawProvider {
 }
 ```
 
-The law focus only on identifing cookies. Anonymous cookies used for cookie-based routing can be whitelisted.
+The law focus only on identifing cookies. Anonymous cookies, used for cookie-based routing for example, can be whitelisted.
