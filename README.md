@@ -1,5 +1,7 @@
 # Cookie law bundle
 
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
 This is a proof of concept. Symfony2 sends cookies by default, which is not allowed in the EU Cookie law.
 
 ## Known issues
